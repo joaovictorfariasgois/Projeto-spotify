@@ -1,14 +1,164 @@
+
+/* Layout */
 body{
-    background-color: aqua;
+    background: url(../img/capa.png),
+                url(../img/ruido.png),
+                linear-gradient(50deg,#ff4169,#7c26f8);
+    background-attachment: fixed;
+    font-family: helvetica,Arial, Helvetica, sans-serif;
 }
 
+html, body, #home{
+    height: 100%;
+}
+
+
+
+/* navegação */
+
 .logo{
-    width: 40%;
-    margin-left: 100px;
+    width: 200px;
+    margin-left: 20%;
 }
 
 
 .navbar{
     background-color: black;
-    opacity: 0.9;
+    opacity: 0.7;
+    
 }
+
+/* capa */
+
+.capa{
+    text-align: center;
+}
+.btn-custom {
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+}
+
+.btn-roxo {
+	background: #7c25f8;
+}
+
+.btn-roxo:hover {
+	background: #6207e3;
+	color: white;
+}
+
+.btn-branco {
+	border: 2px solid white;
+}
+
+.btn-branco:hover {
+	background-color: white;
+	color: black;
+}
+
+
+/* estrutura de conteudos */
+
+#servicos{
+    background:white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+
+.albuns{
+    padding: 10px 0;
+}
+
+
+
+/* tipografia */
+
+.capa h1{
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.textos h3, h2{
+    color: #6207e3;
+    font-weight: 600;
+   
+}
+.textos h3{
+    font-size: 2em;
+}
+.textos h2{
+    font-size: 3em;
+}
+
+
+
+
+
+
+
+/* media queries */
+
+/* // Extra small devices (portrait phones, less than 320px) */
+@media (min-width: 150px) and (max-width:360px){ 
+    
+    .btn-custom{
+        width: 80%;
+        font-size: 50%;
+    }
+
+    a .logo{
+        width: 50%;
+    }
+ }
+
+ /* // Extra small devices (portrait phones, less than 576px) */
+ @media(max-width: 575.98px) { 
+    .capa h1{
+        font-size: 2em;
+    }
+    .btn-custom {
+		margin: 10px 15px;
+	}
+
+ }
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .capa h1{
+            font-size: 3em;
+        }
+    .btn-custom {
+        margin: 10px 15px;
+    }
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .capa h1{
+        font-size: 4em;
+    }
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .capa h1{
+        font-size: 5em;
+    }
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .capa h1{
+        font-size: 6em;
+    }
+ }
+
