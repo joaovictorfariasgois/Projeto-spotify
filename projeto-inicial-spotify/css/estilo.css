@@ -1,5 +1,14 @@
-/*
-* 
-* @author Jamilton Damasceno
-*/
+body{
+    background-color: aqua;
+}
 
+.logo{
+    width: 40%;
+    margin-left: 100px;
+}
+
+
+.navbar{
+    background-color: black;
+    opacity: 0.9;
+}
