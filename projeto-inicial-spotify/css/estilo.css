@@ -87,6 +87,11 @@ html, body, #home{
     color: white;
 }
 
+.textos{
+    padding: 20px;
+}
+
+
 .textos h3, h2{
     color: #6207e3;
     font-weight: 600;
