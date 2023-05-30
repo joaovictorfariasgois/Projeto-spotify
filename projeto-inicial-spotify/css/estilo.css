@@ -14,6 +14,7 @@ html, body, #home{
 
 
 
+
 /* navegação */
 
 .logo{
@@ -64,19 +65,65 @@ html, body, #home{
 
 /* estrutura de conteudos */
 
-#servicos{
-    background:white;
+.caixa{
     padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
 }
+
+#servicos{
+    background:white;
+    width: 100%;
+}
+
 
 
 .albuns{
     padding: 10px 0;
 }
 
+.rotacionar{
+    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    padding-left: 80px;
+    padding-top: 30px;
+   
+}
+.rotacionar img{
+    width: 100%;
+}
 
+
+/* rodapé */
+footer{
+    background: #000;
+    padding: 50px 0 20px 0;
+    position: relative;
+}
+footer h4{
+    color: #919496;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+footer .navbar-nav a{
+    color: white;
+    font-size: 0.8em;
+
+}
+footer .navbar-nav a:hover{
+    color: #9bf0e1;
+    font-size: 0.8em;
+    text-decoration: none;
+
+}
+footer ul{
+    list-style: none;
+}
+footer ul li{
+    float: right;
+    margin: 0 5px;
+}
 
 /* tipografia */
 
@@ -102,6 +149,17 @@ html, body, #home{
 }
 .textos h2{
     font-size: 3em;
+}
+
+#recursos h3{
+    color: #9bf0e1;
+}
+#recursos h2{
+    color: #fff;
+}
+
+#recursos p{
+   color: #fff;
 }
 
 
@@ -133,16 +191,22 @@ html, body, #home{
     .btn-custom {
 		margin: 10px 15px;
 	}
+    .rotacionar img{
+        display: none;
+    }
 
  }
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) { 
     .capa h1{
-            font-size: 3em;
-        }
+        font-size: 3em;       
+    } 
     .btn-custom {
         margin: 10px 15px;
+    }
+    .rotacionar img{
+        display: none;
     }
  }
 
@@ -151,6 +215,7 @@ html, body, #home{
     .capa h1{
         font-size: 4em;
     }
+    
  }
 
 /* // Large devices (desktops, 992px and up) */
